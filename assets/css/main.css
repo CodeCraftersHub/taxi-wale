@@ -35,9 +35,11 @@
 
 
 :root{
-    --primary-color: #eed21c;
+    --primary-color: #FFD300;
 }
-
+body {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
 /*=== 1.0 About Section ===*/
 .about-section .section-heading h2 {
     font-size: 36px;
@@ -473,6 +475,63 @@
 }
 .service-content .read-more:hover{
     color: #fff;
+}
+
+.post-content.location .read-more {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    height: 35px;
+    padding: 0 23px 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.post-content.location .read-more:after,
+.post-content.location .read-more:before {
+    background-color: #222;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.post-content.location .read-more:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.post-content.location .read-more:focus:before,
+.post-content.location .read-more:focus:after,
+.post-content.location .read-more:hover:before,
+.post-content.location .read-more:hover:after {
+    width: 100%;
+}
+
+.post-content.location .read-more:hover {
+    color: #fff;
+}
+
+.post-content.location .cars-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-content.location a:hover{
+  color: var(--primary-color);
 }
 @media (min-width: 1400px){
     .bg-half{
@@ -2072,7 +2131,7 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-top .footer-call {
-    padding: 32px 0px;
+    padding: 38px 0px;
     position: relative;
     z-index: 1;
 }
@@ -2247,13 +2306,50 @@ textarea:-ms-input-placeholder {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.2px;
-    color: #222;
+    color: #000;
     line-height: 45px;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .subscribe-form .submit:hover {
-    background-color: #ffab2e;
+    background-color: #000;
+    color: #fff;
+}
+.subscribe-form .submit:after,
+.subscribe-form .submit:before {
+    background-color: #000;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.subscribe-form .submit:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.subscribe-form .submit:focus:before,
+.subscribe-form .submit:focus:after,
+.subscribe-form .submit:hover:before,
+.subscribe-form .submit:hover:after {
+    width: 100%;
+}
+
+.subscribe-form .submit:hover {
+    color: #fff;
 }
 
 #subscribe-result {

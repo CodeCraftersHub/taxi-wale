@@ -13,8 +13,11 @@
 =====================================================
     Header CSS
 ==================================================== */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
 :root{
-    --primary-color: #eed21c;
+    --primary-color: #FFD300;
 }
 .main-header {
     position: relative;
@@ -114,7 +117,7 @@
 
 .header-info li .header-info-icon {
     font-size: 40px;
-    color: #ff9900;
+    color: #eed21c;
     margin-right: 5px;
 }
 
@@ -127,7 +130,7 @@
 }
 
 .header-info li .header-info-text h3 a:hover {
-    color: #ff9900;
+    color: var(--primary-color);
 }
 
 .header-info li .header-info-text h3 span {
@@ -289,7 +292,7 @@
     }
 
     .nav-menu-inner:before {
-        background-color: #ebe724;
+        background-color: #FFD300;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 1% 100%);
         content: "";
         position: absolute;
@@ -888,7 +891,7 @@
     }
 
     .sidebox-content .sidebox-list li.call {
-        color: #ff9900;
+        color: var(--primary-color);
         font-size: 28px;
         font-weight: 700;
     }

@@ -1,6 +1,8 @@
 /*===================================================
 	Template Scripts
 ====================================================*/
+
+
 (function ($) {
     "use strict";
 
@@ -100,6 +102,28 @@
                 }
             );
         });
+
+          // Select all navigation links
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Smooth scroll function
+  function smoothScroll(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const targetId = event.target.getAttribute('href'); // Get section id
+    const targetSection = document.querySelector(targetId);
+
+    // Scroll smoothly to the section
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+
+  // Attach smooth scroll to all nav links
+  navLinks.forEach(link => {
+    link.addEventListener('click', smoothScroll);
+  });
+
 
         // Popup Sidebox
         function sideBox() {
