@@ -12,7 +12,7 @@
     <meta name="description" content="Ridek Online Taxi Booking HTML5 Template">
     <meta name="author" content="DynamicLayers">
 
-    <title>Texi Wale - Providing Reliable Taxi Services Across India </title>
+    <title>Taxi Wale - Providing Reliable Taxi Services Across India</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.png">
 
@@ -83,7 +83,7 @@
                                 <i class="las la-envelope-open"></i>
                             </div>
                             <div class="header-info-text">
-                                <h3><span>Email now</span>abidmeghreja@gmail.com</h3>
+                                <h3><span>Email now</span>abid.taxiwale@gmail.com</h3>
                             </div>
                         </li>
                         <li>
@@ -92,7 +92,7 @@
                                 <i class="las la-map-marked-alt"></i>
                             </div>
                             <div class="header-info-text">
-                                <h3><span>Halk Street</span>Himmat Nagar, India </h3>
+                                <h3>Ahmedabad, India </h3>
                             </div>
                         </li>
                     </ul>
@@ -109,7 +109,7 @@
                     <!--/.site-logo-->
                     <div class="header-menu-wrap">
                         <ul class="nav-menu">
-                            <li class="active dropdown_menu">
+                            <li class="dropdown_menu">
                                 <a href="index.html">Home</a>                                
                             </li>
                             <li class="dropdown_menu">
@@ -124,7 +124,11 @@
                                 
                             </li>
 
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="dropdown_menu">
+                                <a href="/fare.html">Fares</a>
+                            </li>
+
+                            <li><a href="/index.html#contact-us">Contact</a></li>
                         </ul>
                     </div>
                     <div class="menu-right-item">
@@ -172,9 +176,9 @@
             <ul class="sidebox-list">
                 <li class="call"><span>Call for ride:</span>+91 96626 12515</li>
                 <li>
-                    <span>You can find us at:</span>Himmat Nagar, India 
+                    <span>You can find us at:</span>Ahmedabad, India 
                 </li>
-                <li><span>Email now:</span>abidmeghreja@gmail.com</li>
+                <li><span>Email now:</span>abid.taxiwale@gmail.com</li>
             </ul>
         </div>
     </div>
@@ -188,7 +192,7 @@
             <div class="page-header-info">
                 <h4>Get Your Cab!</h4>
                 <h2>Book Your <span>Ride</span></h2>
-                <p>Everything your taxi business <br>needs is already here! </p>
+                <p>Your Ride, Your Way – Anytime, Anywhere!</p>
             </div>
         </div>
     </section>
@@ -204,11 +208,11 @@
                                 <i class="las la-user-tie"></i>
                                 <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Your Name" required>
                             </div>
-                            <div class="form-field">
+                            <!-- <div class="form-field">
                                 <i class="las la-envelope-open"></i>
                                 <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-                            </div>
-                            <div class="form-field">
+                            </div> -->
+                            <!-- <div class="form-field">
                                 <i class="las la-tags"></i>
                                 <select name="package-type" id="package-type" class="niceSelect">
                                     <option value="standard">Standard</option>
@@ -227,23 +231,122 @@
                                     <option value="4">4 Person</option>
                                     <option value="5">5 Person</option>
                                 </select>
+                            </div> -->
+                            <div class="form-field">
+                                <i class="las la-phone-volume"></i>
+                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Phone Number" required>
                             </div>
                             <div class="form-field">
                                 <i class="las la-map-marker"></i>
-                                <input type="text" id="start-dest" name="start-dest" class="form-control" placeholder="Start Destination" required>
+                                <input list="pickup-options" id="start-dest" name="start-dest" class="form-control" placeholder="Pickup City" required>
+                                <datalist id="pickup-options">
+                                    <!-- Pick-up city options -->
+                                    <option value="Ahmedabad">
+                                    <option value="Vadodara">
+                                    <option value="Bhuj">
+                                    <option value="Gandhidham">
+                                    <option value="Modasa">
+                                    <option value="Mumbai">
+                                    <option value="Rajkot">
+                                    <option value="Surat">
+                                    <option value="Udaipur">
+                                    <option value="Agra">
+                                    <option value="Ajmer">
+                                    <option value="Ambaji">
+                                    <option value="Amreli">
+                                    <option value="Anand">
+                                    <option value="Bharuch">
+                                    <option value="Bhavnagar">
+                                    <option value="Bhilwara">
+                                    <option value="Dahej">
+                                    <option value="Dakor">
+                                    <option value="Deesa">
+                                    <option value="Delhi">
+                                    <option value="Diu">
+                                    <option value="Dwarka">
+                                    <option value="Gandhinagar">
+                                    <option value="Godhra">
+                                    <option value="Halol">
+                                    <option value="Himmatnagar">
+                                    <option value="Jaipur">
+                                    <option value="Jamnagar">
+                                    <option value="Junagadh">
+                                    <option value="Kadi">
+                                    <option value="Lucknow">
+                                    <option value="Mehsana">
+                                    <option value="Morbi">
+                                    <option value="Mundra">
+                                    <option value="Nadiad">
+                                    <option value="Nathdwara">
+                                    <option value="Navsari">
+                                    <option value="Palanpur">
+                                    <option value="Palitana">
+                                    <option value="Porbandar">
+                                    <option value="Pune">
+                                    <option value="Vapi">
+                                </datalist>
                             </div>
                             <div class="form-field">
                                 <i class="las la-map-marker"></i>
-                                <input type="text" id="end-dest" name="end-dest" class="form-control" placeholder="End Destination" required>
+                                <input list="drop-options" id="end-dest" name="end-dest" class="form-control" placeholder="Drop City" required>
+                                <datalist id="drop-options">
+                                    <!-- Drop-off city options -->
+                                    <option value="Ankleshwar">
+                                    <option value="Abu Road">
+                                    <option value="Ahmedabad">
+                                    <option value="Vadodara">
+                                    <option value="Bhuj">
+                                    <option value="Gandhidham">
+                                    <option value="Modasa">
+                                    <option value="Mumbai">
+                                    <option value="Rajkot">
+                                    <option value="Surat">
+                                    <option value="Udaipur">
+                                    <option value="Agra">
+                                    <option value="Ajmer">
+                                    <option value="Ambaji">
+                                    <option value="Amreli">
+                                    <option value="Anand">
+                                    <option value="Bharuch">
+                                    <option value="Bhavnagar">
+                                    <option value="Bhilwara">
+                                    <option value="Dahej">
+                                    <option value="Dakor">
+                                    <option value="Deesa">
+                                    <option value="Delhi">
+                                    <option value="Diu">
+                                    <option value="Dwarka">
+                                    <option value="Gandhinagar">
+                                    <option value="Godhra">
+                                    <option value="Halol">
+                                    <option value="Himmatnagar">
+                                    <option value="Jaipur">
+                                    <option value="Jamnagar">
+                                    <option value="Junagadh">
+                                    <option value="Kadi">
+                                    <option value="Lucknow">
+                                    <option value="Mehsana">
+                                    <option value="Morbi">
+                                    <option value="Mundra">
+                                    <option value="Nadiad">
+                                    <option value="Nathdwara">
+                                    <option value="Navsari">
+                                    <option value="Palanpur">
+                                    <option value="Palitana">
+                                    <option value="Porbandar">
+                                    <option value="Pune">
+                                    <option value="Vapi">
+                                </datalist>
                             </div>
-                            <div class="form-field">
+
+                            <!-- <div class="form-field">
                                 <i class="las la-calendar"></i>
                                 <input type="text" id="ride-date" name="ride-date" class="form-control date-picker" placeholder="Select Date" required>
                             </div>
                             <div class="form-field">
                                 <i class="las la-clock"></i>
                                 <input type="text" id="ride-time" name="ride-time" class="form-control time-picker" placeholder="Select Time" required>
-                            </div>
+                            </div> -->
                             <div class="form-field">
                                 <button id="submit" class="default-btn" type="submit">Book Your Taxi</button>
                             </div>
@@ -313,8 +416,8 @@
                                 <h3>Head Office</h3>
                             </div>
                             <ul class="footer-contact">
-                                <li><span>Location:</span>Himatnagar, India</li>
-                                <li><span>Join Us:</span>abidmeghreja@gmail.com</li>
+                                <li><span>Location:</span>Ahmedabad, India</li>
+                                <li><span>Join Us:</span>abid.taxiwale@gmail.com</li>
                             </ul>
                         </div>
                     </div>

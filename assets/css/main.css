@@ -86,6 +86,7 @@ body {
     position: absolute;
     right: 100px;
     top: 60px;
+    width: 200px;
 }
 
 .round-text img {
@@ -1011,14 +1012,14 @@ body {
 
 .pricing-car .price {
     background-color: var(--primary-color);
-    clip-path: polygon(85% 0%, 100% 30%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0%, 100% 30%, 100% 100%, 18% 100%, 0 0);
     font-size: 20px;
     font-weight: 700;
     color: #222;
     padding: 10px 15px 10px 25px;
     position: absolute;
-    right: 40px;
-    top: 55px;
+    right: 0px;
+    top: 0px;
     z-index: -1;
 }
 
@@ -1629,7 +1630,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     height: 100%;
     content: "";
     position: absolute;
@@ -2453,3 +2454,103 @@ textarea:-ms-input-placeholder {
         left: -200px;
     }
 }
+
+/* Manually added */
+
+.form-toggle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 5px;
+    border: 2px dotted var(--primary-color);
+    font-weight: bold;
+
+
+}
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: #000;
+    
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-submit {
+    background-color: #000;
+    padding: 0 35px 0 30px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.form-submit:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+.form-submit:after,
+.form-submit:before {
+    background-color: var(--primary-color);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.form-submit:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.form-submit:focus:before,
+.form-submit:focus:after,
+.form-submit:hover:before,
+.form-submit:hover:after {
+    width: 100%;
+}
+
+.form-submit:hover {
+    color: #000;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+  } 
+
+
+  @media (max-width: 1024px) {
+    .contact-details-wrap {
+        padding: 0 30px;
+        margin-bottom: 2rem;
+    }
+}
+

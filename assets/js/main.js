@@ -474,3 +474,23 @@
 
     });
 })(jQuery);
+
+
+const contactForm = document.getElementById('contactForm');
+const driverForm = document.getElementById('driverForm');
+const contactFormBtn = document.getElementById('contactFormBtn');
+const driverFormBtn = document.getElementById('driverFormBtn');
+
+contactFormBtn.addEventListener('click', () => {
+    contactForm.style.display = 'block';
+    driverForm.style.display = 'none';
+    contactFormBtn.classList.add('active');
+    driverFormBtn.classList.remove('active');
+});
+
+driverFormBtn.addEventListener('click', () => {
+    contactForm.style.display = 'none';
+    driverForm.style.display = 'block';
+    driverFormBtn.classList.add('active');
+    contactFormBtn.classList.remove('active');
+});
