@@ -2575,3 +2575,16 @@ input::-webkit-calendar-picker-indicator {
     position: relative;
     z-index: 0; /* Keep the image behind the overlay */
 }
+
+
+.check-list.service-check-list li i{
+    margin-right: 10px;
+    background-color: #222;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    font-size: 12px;
+    color: #ffffff;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
