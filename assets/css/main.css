@@ -2554,3 +2554,20 @@ input::-webkit-calendar-picker-indicator {
     }
 }
 
+
+.slider-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* Black with 50% opacity */
+    z-index: 1; /* Ensure it sits on top of the image */
+}
+
+/* Ensure image stays behind the overlay */
+.slider-img img {
+    position: relative;
+    z-index: 0; /* Keep the image behind the overlay */
+}
