@@ -2552,7 +2552,11 @@ input::-webkit-calendar-picker-indicator {
         padding: 0 30px;
         margin-bottom: 2rem;
     }
+    .slider-content.text-left.pb-60{
+        text-align: center;
+    }
 }
+
 
 
 .slider-img::before {
