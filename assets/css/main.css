@@ -2555,6 +2555,9 @@ input::-webkit-calendar-picker-indicator {
     .slider-content.text-left.pb-60{
         text-align: center;
     }
+    .custom_gap{
+        row-gap: 50px;
+    }
 }
 
 
