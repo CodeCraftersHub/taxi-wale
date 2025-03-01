@@ -476,21 +476,39 @@
 })(jQuery);
 
 
-const contactForm = document.getElementById('contactForm');
-const driverForm = document.getElementById('driverForm');
-const contactFormBtn = document.getElementById('contactFormBtn');
-const driverFormBtn = document.getElementById('driverFormBtn');
+// const contactForm = document.getElementById('contactForm');
+// const driverForm = document.getElementById('driverForm');
+// const contactFormBtn = document.getElementById('contactFormBtn');
+// const driverFormBtn = document.getElementById('driverFormBtn');
 
-contactFormBtn.addEventListener('click', () => {
-    contactForm.style.display = 'block';
-    driverForm.style.display = 'none';
-    contactFormBtn.classList.add('active');
-    driverFormBtn.classList.remove('active');
-});
+// contactFormBtn.addEventListener('click', () => {
+//     contactForm.style.display = 'block';
+//     driverForm.style.display = 'none';
+//     contactFormBtn.classList.add('active');
+//     driverFormBtn.classList.remove('active');
+// });
 
-driverFormBtn.addEventListener('click', () => {
-    contactForm.style.display = 'none';
-    driverForm.style.display = 'block';
-    driverFormBtn.classList.add('active');
-    contactFormBtn.classList.remove('active');
+// driverFormBtn.addEventListener('click', () => {
+//     contactForm.style.display = 'none';
+//     driverForm.style.display = 'block';
+//     driverFormBtn.classList.add('active');
+//     contactFormBtn.classList.remove('active');
+// });
+
+function getUrlParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.has(name);
+}
+
+function removeQueryParameters() {
+    const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+    window.history.pushState({}, "", newUrl); // Update the URL without the query parameters
+}
+
+// Check if the 'any' parameter exists on page load
+window.addEventListener('DOMContentLoaded', function() {
+    if (getUrlParameter('form')) {
+        alert('Form submitted');
+        removeQueryParameters(); // Remove query parameters after the alert
+    }
 });

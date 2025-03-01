@@ -16,6 +16,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -83,7 +85,7 @@
                                 <i class="las la-envelope-open"></i>
                             </div>
                             <div class="header-info-text">
-                                <h3><span>Email now</span>abid.taxiwale@gmail.com</h3>
+                                <h3><span>Email now</span><a href="mailto:abid.taxiwale@gmail.com">abid.taxiwale@gmail.com</a></h3>
                             </div>
                         </li>
                         <li>
@@ -121,6 +123,10 @@
                             </li>
                             <li class="dropdown_menu">
                                 <a href="#services">Services</a>
+                            </li>
+
+                            <li class="dropdown_menu">
+                                <a href="driver.html">Driver</a>
                             </li>
 
                             <li class="dropdown_menu">
@@ -660,14 +666,14 @@
                                 <div class="pricing-head-wrap">
                                     <div class="pricing-car">
                                         <img src="assets/img/kia.png" alt="car">
-                                        <div class="price">Rs. 11/km</div>
+                                        <div class="price">Rs. 16/km</div>
                                     </div>
                                 </div>
                                 <div class="pricing-head">
                                     <h3>Kia Carens
                                 </div>
                                 <ul class="pricing-list">
-                                    <li>Per KM Charge: <span>Rs. 11</span></li>
+                                    <li>Per KM Charge: <span>Rs. 16</span></li>
                                     <li>Passengers: <span>4 Person</span></li>
                                     <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
                                 </ul>
@@ -678,14 +684,14 @@
                                 <div class="pricing-head-wrap">
                                     <div class="pricing-car">
                                         <img src="assets/img/eeco-car.png" alt="car">
-                                        <div class="price">Rs. 16/km</div>
+                                        <div class="price">Rs. 11/km</div>
                                     </div>
                                 </div>
                                 <div class="pricing-head">
                                     <h3>Eeco
                                 </div>
                                 <ul class="pricing-list">
-                                    <li>Per KM Charge: <span>Rs. 16</span></li>
+                                    <li>Per KM Charge: <span>Rs. 11</span></li>
                                     <li>Passengers: <span>7 Person</span></li>
                                     <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
                                 </ul>
@@ -703,7 +709,7 @@
                                     <h3>Tempo Traveller
                                 </div>
                                 <ul class="pricing-list">
-                                    <li>Per KM Charge: <span>Rs. 11</span></li>
+                                    <li>Per KM Charge: <span>Rs. 29</span></li>
                                     <li>Passengers: <span>9 - 26 Person</span></li>
                                     <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
                                 </ul>
@@ -1093,7 +1099,7 @@
                         </div>
                         <ul class="contact-details">
                             <li><i class="fas fa-map-marker-alt"></i>Ahemdabad<br> Gujrat, India</li>
-                            <li><i class="fas fa-envelope"></i>abid.taxiwale@gmail.com</li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:abid.taxiwale@gmail.com">abid.taxiwale@gmail.com</a></li>
                             <li><i class="fas fa-phone"></i> +91 96626 12515 </li>
                         </ul>
                     </div>
@@ -1174,12 +1180,12 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="form-toggle">
-                        <button id="contactFormBtn" class="toggle-btn active">Contact Form</button>
-                        <button id="driverFormBtn" class="toggle-btn">Driver Form</button>
-                    </div>
                     <div class="contact-form" id="contactForm">
-                        <form action="#" method="post" id="ajax_contact" class="form-horizontal">
+                        <form action="https://api.web3forms.com/submit" method="post" id="ajax_contact" class="form-horizontal">
+
+                            <input type="hidden" name="access_key" value="a9a51003-f191-4edc-84fb-56feb605f7bf">
+                            <input type="hidden" name="subject" value="New Contact Form Submitted">
+                            <input type="hidden" name="redirect" value="http://192.168.29.72:5500/index.html?form">
                             
                             <div class="contact-form-group">
                                 <div class="form-field">
@@ -1198,39 +1204,10 @@
                                     <textarea id="message" name="message" cols="30" rows="4" class="form-control" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="form-field">
-                                    <button id="submit" class="form-submit" type="submit">Send Message</button>
+                                    <button id="submit" class="default-btn" type="submit">Send Message</button>
                                 </div>
                             </div>
                             <div id="form-messages" class="alert" role="alert"></div>
-                        </form>
-                    </div>
-            
-                    <div class="contact-form" id="driverForm" style="display: none;">
-                        <form action="#" method="post" id="ajax_driver" class="form-horizontal">
-                            <!-- <div class="contact-title">
-                                <h2>Driver Registration Form</h2>
-                            </div> -->
-                            <div class="contact-form-group">
-                                <div class="form-field">
-                                    <input type="text" id="driverName" name="driverName" class="form-control" placeholder="Driver Name" required>
-                                </div>
-                                <div class="form-field">
-                                    <input type="text" id="license" name="license" class="form-control" placeholder="License Number" required>
-                                </div>
-                                <div class="form-field">
-                                    <input type="text" id="vehicleType" name="vehicleType" class="form-control" placeholder="Vehicle Type" required>
-                                </div>
-                                <div class="form-field">
-                                    <input type="text" id="driverPhone" name="phone" class="form-control" placeholder="Phone Number" required>
-                                </div>
-                                <div class="form-field message">
-                                    <textarea id="experience" name="experience" cols="30" rows="4" class="form-control" placeholder="Driving Experience" required></textarea>
-                                </div>
-                                <div class="form-field">
-                                    <button id="submitDriver" class="form-submit" type="submit">Register Driver</button>
-                                </div>
-                            </div>
-                            <div id="driver-form-messages" class="alert" role="alert"></div>
                         </form>
                     </div>
                 </div>
@@ -1286,9 +1263,7 @@
                                 <h3>Working Hours</h3>
                             </div>
                             <ul class="footer-contact">
-                                <li><span>Monday - Friday:</span>9.00am To 8.00pm</li>
-                                <li><span>Saturday:</span>10.00am To 7.30pm</li>
-                                <li><span>Sunday:</span>Close Day!</li>
+                                <li><span>Monday - Sunday:</span>24 hrs. (24/7)</li>
                             </ul>
                         </div>
                     </div>
@@ -1313,21 +1288,17 @@
                             </div>
                             <ul class="footer-contact">
                                 <li><span>Location:</span>Ahemdabad, India</li>
-                                <li><span>Join Us:</span>abid.taxiwale@gmail.com</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 sm-padding">
                         <div class="footer-item subscribe-wrap">
                             <div class="widget-title">
-                                <h3>Newsletter Signup</h3>
+                                <h3>Write Us Now</h3>
                             </div>
-                            <form action="#" class="subscribe-form">
-                                <input class="form-control" type="email" name="email" placeholder="Your Email" required="">
-                                <input type="hidden" name="action" value="mailchimpsubscribe">
-                                <button class="submit">Subscribe Now</button>
-                                <div class="clearfix"></div>
-                            </form>
+                            <ul class="footer-contact">
+                                <li><span>Email:</span>abid.taxiwale@gmail.com</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1348,12 +1319,16 @@
     </footer>
     <!--/.footer-section-->
 
-    <div id="scrollup">
-        <button id="scroll-top" class="scroll-to-top">
+    <!-- <div id="scrollup">
+        <button class="scroll-to-top">
             <i class="las la-arrow-up"></i>
         </button>
-    </div>
+    </div> -->
     <!--scrollup-->
+
+    <a href="https://api.whatsapp.com/send?phone=919662612515&text=Hi" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+        </a>
 
     <div class="dl-cursor">
         <div class="cursor-icon-holder"><i class="las la-times"></i></div>

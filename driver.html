@@ -123,15 +123,15 @@
                                 <a href="#services">Services</a>
                             </li>
 
-                            <li class="dropdown_menu">
+                            <li class="active dropdown_menu">
                                 <a href="driver.html">Driver</a>
                             </li>
-
+                            
                             <li class="dropdown_menu">
-                                <a href="fare.html">Fares</a>
+                                <a href="/fare.html">Fares</a>
                             </li>
 
-                            <li><a href="index.html#contact-us">Contact</a></li>
+                            <li><a href="/index.html#contact-us">Contact</a></li>
                         </ul>
                     </div>
                     <div class="menu-right-item">
@@ -193,9 +193,9 @@
         <div class="page-header-shape"></div>
         <div class="container">
             <div class="page-header-info">
-                <h4>Get Your Cab!</h4>
-                <h2>Book Your <span>Ride</span></h2>
-                <p>Your Ride, Your Way – Anytime, Anywhere!</p>
+                <h4>Join us!</h4>
+                <h2>Add Your <span>Car</span></h2>
+                <p>Driven by Safety, Powered by Trust!</p>
             </div>
         </div>
     </section>
@@ -205,142 +205,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <div class="section-heading text-center mb-40 wow fade-in-bottom" data-wow-delay="200ms">
+                        <h4><span></span>Join Now!</h4>
+                        <h2>Add your car details here!</h2>
+                    </div>
+                    
+                    
+                    <div class="table table-striped table-responsive table-hover">                
+                        <div class="contact-form" id="driverForm">
+                            <form action="https://api.web3forms.com/submit" method="POST" id="ajax_driver" class="form-horizontal"> 
+                                <div class="contact-form-group">
 
-                        <input type="hidden" name="access_key" value="e3efc9c5-a54e-4cf9-bbd1-1e26046bed07">
-                        <input type="hidden" name="subject" value="Customer Booked a Taxi!!!">
-                        <input type="hidden" name="redirect" value="http://192.168.29.72:5500/book-taxi.html?form">
+                                    <input type="hidden" name="access_key" value="05a4dd11-e7ee-4849-ab1b-0bfb1673c515">
+                                    <input type="hidden" name="subject" value="New Driver Form Submitted">
+                                    <input type="hidden" name="redirect" value="http://192.168.29.72:5500/driver.html?form">
 
-                        <div class="taxi-booking-form">
-                            <div class="form-field">
-                                <i class="las la-user-tie"></i>
-                                <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-phone-volume"></i>
-                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Phone Number" required>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-map-marker"></i>
-                                <input list="pickup-options" id="start-dest" name="start-dest" class="form-control" placeholder="Pickup City" required>
-                                <datalist id="pickup-options">
-                                    <!-- Pick-up city options -->
-                                    <option value="Ahmedabad">
-                                    <option value="Vadodara">
-                                    <option value="Bhuj">
-                                    <option value="Gandhidham">
-                                    <option value="Modasa">
-                                    <option value="Mumbai">
-                                    <option value="Rajkot">
-                                    <option value="Surat">
-                                    <option value="Udaipur">
-                                    <option value="Agra">
-                                    <option value="Ajmer">
-                                    <option value="Ambaji">
-                                    <option value="Amreli">
-                                    <option value="Anand">
-                                    <option value="Bharuch">
-                                    <option value="Bhavnagar">
-                                    <option value="Bhilwara">
-                                    <option value="Dahej">
-                                    <option value="Dakor">
-                                    <option value="Deesa">
-                                    <option value="Delhi">
-                                    <option value="Diu">
-                                    <option value="Dwarka">
-                                    <option value="Gandhinagar">
-                                    <option value="Godhra">
-                                    <option value="Halol">
-                                    <option value="Himmatnagar">
-                                    <option value="Jaipur">
-                                    <option value="Jamnagar">
-                                    <option value="Junagadh">
-                                    <option value="Kadi">
-                                    <option value="Lucknow">
-                                    <option value="Mehsana">
-                                    <option value="Morbi">
-                                    <option value="Mundra">
-                                    <option value="Nadiad">
-                                    <option value="Nathdwara">
-                                    <option value="Navsari">
-                                    <option value="Palanpur">
-                                    <option value="Palitana">
-                                    <option value="Porbandar">
-                                    <option value="Pune">
-                                    <option value="Vapi">
-                                </datalist>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-map-marker"></i>
-                                <input list="drop-options" id="end-dest" name="end-dest" class="form-control" placeholder="Drop City" required>
-                                <datalist id="drop-options">
-                                    <!-- Drop-off city options -->
-                                    <option value="Ankleshwar">
-                                    <option value="Abu Road">
-                                    <option value="Ahmedabad">
-                                    <option value="Vadodara">
-                                    <option value="Bhuj">
-                                    <option value="Gandhidham">
-                                    <option value="Modasa">
-                                    <option value="Mumbai">
-                                    <option value="Rajkot">
-                                    <option value="Surat">
-                                    <option value="Udaipur">
-                                    <option value="Agra">
-                                    <option value="Ajmer">
-                                    <option value="Ambaji">
-                                    <option value="Amreli">
-                                    <option value="Anand">
-                                    <option value="Bharuch">
-                                    <option value="Bhavnagar">
-                                    <option value="Bhilwara">
-                                    <option value="Dahej">
-                                    <option value="Dakor">
-                                    <option value="Deesa">
-                                    <option value="Delhi">
-                                    <option value="Diu">
-                                    <option value="Dwarka">
-                                    <option value="Gandhinagar">
-                                    <option value="Godhra">
-                                    <option value="Halol">
-                                    <option value="Himmatnagar">
-                                    <option value="Jaipur">
-                                    <option value="Jamnagar">
-                                    <option value="Junagadh">
-                                    <option value="Kadi">
-                                    <option value="Lucknow">
-                                    <option value="Mehsana">
-                                    <option value="Morbi">
-                                    <option value="Mundra">
-                                    <option value="Nadiad">
-                                    <option value="Nathdwara">
-                                    <option value="Navsari">
-                                    <option value="Palanpur">
-                                    <option value="Palitana">
-                                    <option value="Porbandar">
-                                    <option value="Pune">
-                                    <option value="Vapi">
-                                </datalist>
-                            </div>
-                            
-                            <div class="form-field">
-                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            </div>
 
-                            <!-- <div class="form-field">
-                                <i class="las la-calendar"></i>
-                                <input type="text" id="ride-date" name="ride-date" class="form-control date-picker" placeholder="Select Date" required>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-clock"></i>
-                                <input type="text" id="ride-time" name="ride-time" class="form-control time-picker" placeholder="Select Time" required>
-                            </div> -->
-                            <div class="form-field">
-                                <button id="submit" class="default-btn" type="submit">Book Your Taxi</button>
-                            </div>
+                                    <div class="form-field">
+                                        <input type="text" id="driverName" name="driverName" class="form-control" placeholder="Driver Name" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" id="driverPhone" name="phone" class="form-control" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" id="Company" name="license" class="form-control" placeholder="Company Name" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" id="vehicleType" name="vehicleType" class="form-control" placeholder="Vehicle Type" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="Address" class="form-control" placeholder="Address" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="number" name="NumberofTaxi" class="form-control" placeholder="Number of Taxi" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <button id="submitDriver" class="default-btn" type="submit">Register Driver</button>
+                                    </div>
+
+                                    <div class="form-field">
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    </div>
+
+                                </div>
+                                <div id="driver-form-messages" class="alert" role="alert"></div>
+                            </form>
                         </div>
-                    </form><!-- Booking Form -->
-                </div>
+                    </div>
             </div>
         </div>
     </div>
