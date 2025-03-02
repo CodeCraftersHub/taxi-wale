@@ -230,16 +230,122 @@
                                         <input type="text" id="driverPhone" name="phone" class="form-control" placeholder="Phone Number" required>
                                     </div>
                                     <div class="form-field">
-                                        <input type="text" id="Company" name="license" class="form-control" placeholder="Company Name" required>
+                                        <input list="pickup-options" id="city" name="city" class="form-control" placeholder="Choose City" required>
+                                        <datalist id="pickup-options">
+                                            <!-- Pick-up city options -->
+                                            <option value="Ahmedabad">
+                                            <option value="Vadodara">
+                                            <option value="Bhuj">
+                                            <option value="Gandhidham">
+                                            <option value="Modasa">
+                                            <option value="Mumbai">
+                                            <option value="Rajkot">
+                                            <option value="Surat">
+                                            <option value="Udaipur">
+                                            <option value="Agra">
+                                            <option value="Ajmer">
+                                            <option value="Ambaji">
+                                            <option value="Amreli">
+                                            <option value="Anand">
+                                            <option value="Bharuch">
+                                            <option value="Bhavnagar">
+                                            <option value="Bhilwara">
+                                            <option value="Dahej">
+                                            <option value="Dakor">
+                                            <option value="Deesa">
+                                            <option value="Delhi">
+                                            <option value="Diu">
+                                            <option value="Dwarka">
+                                            <option value="Gandhinagar">
+                                            <option value="Godhra">
+                                            <option value="Halol">
+                                            <option value="Himmatnagar">
+                                            <option value="Jaipur">
+                                            <option value="Jamnagar">
+                                            <option value="Junagadh">
+                                            <option value="Kadi">
+                                            <option value="Lucknow">
+                                            <option value="Mehsana">
+                                            <option value="Morbi">
+                                            <option value="Mundra">
+                                            <option value="Nadiad">
+                                            <option value="Nathdwara">
+                                            <option value="Navsari">
+                                            <option value="Palanpur">
+                                            <option value="Palitana">
+                                            <option value="Porbandar">
+                                            <option value="Pune">
+                                            <option value="Vapi">
+                                        </datalist>
                                     </div>
                                     <div class="form-field">
-                                        <input type="text" id="vehicleType" name="vehicleType" class="form-control" placeholder="Vehicle Type" required>
+                                        <input list="car-option" id="typeOfCar" name="typeOfCar" class="form-control" placeholder="Choose Type" required>
+                                        <datalist id="car-option">
+                                            <option value="13 Seater SML Executive">
+                                            <option value="13 Seater Tempo Traveller">
+                                            <option value="13 Seater Tempo Traveller - Deluxe">
+                                            <option value="13 Seater Tempo Traveller - Luxury">
+                                            <option value="17 Seater Tempo Traveller">
+                                            <option value="17 Seater Tempo Traveller - Deluxe">
+                                            <option value="17 Seater Tempo Traveller - Luxury">
+                                            <option value="26 Seater Tempo Traveller">
+                                            <option value="26 Seater Tempo Traveller - Deluxe">
+                                            <option value="26 Seater Tempo Traveller - Luxury">
+                                            <option value="35 Seater AC Bus">
+                                            <option value="37 Seater AC Bus">
+                                            <option value="45 Seater AC Bus">
+                                            <option value="49 Seater AC Bus">
+                                            <option value="55 Seater AC Bus">
+                                            <option value="720D">
+                                            <option value="Audi A4">
+                                            <option value="Audi A4">
+                                            <option value="Audi A6">
+                                            <option value="Audi A6">
+                                            <option value="Audi Q5">
+                                            <option value="Audi Q5">
+                                            <option value="Audi Q7">
+                                            <option value="Audi Q7">
+                                            <option value="BMW 3 Series">
+                                            <option value="BMW 5 Series">
+                                            <option value="BMW 5 Series">
+                                            <option value="Bus">
+                                            <option value="Bus">
+                                            <option value="Corolla Altis">
+                                            <option value="Fortuner">
+                                            <option value="Hatchback (Swift Desire)">
+                                            <option value="Honda Accord">
+                                            <option value="Honda Accord">
+                                            <option value="Honda City">
+                                            <option value="Honda City">
+                                            <option value="Hyundai Verna">
+                                            <option value="Hyundai Xcent">
+                                            <option value="Innova">
+                                            <option value="Jaguar">
+                                            <option value="Jaguar XF">
+                                            <option value="Maruti Suzuki Ertiga Or Similar">
+                                            <option value="Maruti Swift Dzire">
+                                            <option value="Mercedes C Class">
+                                            <option value="Mercedes C Class">
+                                            <option value="Mercedes E Class">
+                                            <option value="Mercedes E Class">
+                                            <option value="skoda slavia">
+                                            <option value="Swift Desire">
+                                            <option value="Swift Dzire Or Similar">
+                                            <option value="Tata Indigo eCS">
+                                            <option value="Tempo Traveler 17 seater">
+                                            <option value="Tempo Traveler 17 seater">
+                                            <option value="Toyota Corolla Altis">
+                                            <option value="Toyota Etios">
+                                            <option value="Toyota Etios Liva">
+                                            <option value="Toyota Etios Sedan">
+                                            <option value="Toyota Innova Crysta">
+                                            <option value="Toyota Innova Old Model">
+                                            <option value="Toyota vellfire Hi">
+                                            <option value="Wagon R Or Similar">
+                                                </datalist>
                                     </div>
                                     <div class="form-field">
-                                        <input type="text" name="Address" class="form-control" placeholder="Address" required>
-                                    </div>
-                                    <div class="form-field">
-                                        <input type="number" name="NumberofTaxi" class="form-control" placeholder="Number of Taxi" required>
+                                        <input type="text" name="NumberofTaxi" class="form-control" placeholder="Taxi Number" required>
                                     </div>
                                     <div class="form-field">
                                         <button id="submitDriver" class="default-btn" type="submit">Register Driver</button>
