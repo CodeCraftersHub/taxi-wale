@@ -1812,7 +1812,7 @@ body {
 /*=== 10.0 Taxi Booking Form ===*/
 .taxi-booking-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -1823,6 +1823,10 @@ body {
     font-size: 17px;
     outline: none;
     box-shadow: none;
+}
+.taxi-booking-form .form-control::placeholder{
+    color: #000 !important;
+    font-weight: bold;
 }
 
 .taxi-booking-form .form-control:focus {
@@ -1836,6 +1840,10 @@ body {
     height: 50px;
     line-height: 50px;
     font-size: 17px;
+}
+.taxi-booking-form .niceSelect span{
+    color: #000;
+    font-weight: bold;
 }
 
 .taxi-booking-form .nice-select .list {
@@ -2608,4 +2616,20 @@ input::-webkit-calendar-picker-indicator {
 
 .my-float{
 	margin-top:16px;
+}
+.slider-btn.wp a{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 60px;
+    padding: 0.875rem;
+}
+.slider-btn.wp a:hover{
+    background-color: #25d366;
+    color: #fff;
+}
+.slider-btn.wp a i{
+    margin-right: 0.5rem;
+    font-size: 20px;
 }

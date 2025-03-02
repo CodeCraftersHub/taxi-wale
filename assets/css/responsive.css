@@ -5,6 +5,7 @@
 /* Tablet Devices */
 @media (max-width: 992px) {
     .padding{ padding: 50px 0; }
+    .book-section.padding{ padding: 120px 0; }
     .sm-padding{ padding: 15px; }
     p br{ display: none; }
     span br{ display: none; }
@@ -95,6 +96,28 @@
     }
     .contact-form-group .default-btn{ font-size: 14px; }
 
+    .slider-img{
+        height: 700px;
+    }
+    .hero-padding {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        text-align: left;
+    }
+    
+    .slider-content-wrap .row{
+        align-items: baseline;
+    }
+    .taxi-booking-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .slider-caption.big{
+        font-size: 35px;
+        line-height: 42px;
+        text-align: left;
+    }
 }
 
 /* Mobile Devices */
@@ -203,6 +226,26 @@
         display: block;
         margin-bottom: 15px;
     }
+    .slider-img{
+        height: 700px;
+    }
+    .hero-padding {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .slider-caption.big {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .taxi-booking-form{
+        gap: 18px;
+    }
+    .default-btn.book-now{
+        width: 100%;
+    }
+
     
 }
 
@@ -223,5 +266,19 @@
     }
     .app-feature li:not(:last-of-type){
         margin-bottom: 20px;
+    }
+    .slider-img{
+        height: 700px;
+    }
+    .hero-padding {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .taxi-booking-form{
+        gap: 18px;
+    }
+    .default-btn.book-now{
+        width: 100% !important;
     }
 }
