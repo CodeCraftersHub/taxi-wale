@@ -129,7 +129,7 @@
                             </li>
 
                             <li class="dropdown_menu">
-                                <a href="fare.html">Fares</a>
+                                <a href="fare.html">Routes</a>
                             </li>
 
                             <li><a href="index.html#contact-us">Contact</a></li>
@@ -208,19 +208,12 @@
                 <div class="col-lg-10 offset-lg-1">
                     <form action="https://api.web3forms.com/submit" method="POST">
 
-                        <input type="hidden" name="access_key" value="e3efc9c5-a54e-4cf9-bbd1-1e26046bed07">
+                        <input type="hidden" name="access_key" value="54525a28-21b5-41fe-b4a4-cbd1e1ebf6fe">
                         <input type="hidden" name="subject" value="Customer Booked a Taxi!!!">
                         <input type="hidden" name="redirect" value="https://codecraftershub.github.io/taxi-wale/book-taxi.html?form">
 
                         <div class="taxi-booking-form">
-                            <div class="form-field">
-                                <i class="las la-user-tie"></i>
-                                <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-phone-volume"></i>
-                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Phone Number" required>
-                            </div>
+
                             <div class="form-field">
                                 <i class="las la-map-marker"></i>
                                 <input list="pickup-options" id="start-dest" name="start-dest" class="form-control" placeholder="Pickup City" required>
@@ -323,19 +316,31 @@
                                     <option value="Vapi">
                                 </datalist>
                             </div>
+
+                            <div class="form-field">
+                                <i class="las la-tags"></i>
+                                <select name="package-type" id="package-type" name="TypeOfCab" class="niceSelect">
+                                    <option selected>Type of Cab</option>
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="SUV">SUV</option>
+                                    <option value="VIP">VIP</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                            </div>
+
+                            <div class="form-field">
+                                <i class="las la-calendar"></i>
+                                <input type="text" id="ride-date" name="ride-date" class="form-control date-picker" placeholder="Select Date" required>
+                            </div>
+
+                            <div class="form-field">
+                                <i class="las la-phone-volume"></i>
+                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
                             
                             <div class="form-field">
                                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             </div>
-
-                            <!-- <div class="form-field">
-                                <i class="las la-calendar"></i>
-                                <input type="text" id="ride-date" name="ride-date" class="form-control date-picker" placeholder="Select Date" required>
-                            </div>
-                            <div class="form-field">
-                                <i class="las la-clock"></i>
-                                <input type="text" id="ride-time" name="ride-time" class="form-control time-picker" placeholder="Select Time" required>
-                            </div> -->
                             <div class="form-field">
                                 <button id="submit" class="default-btn" type="submit">Book Your Taxi</button>
                             </div>

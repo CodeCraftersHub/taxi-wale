@@ -138,7 +138,7 @@
                             </li>
 
                             <li class="dropdown_menu">
-                                <a href="fare.html">Fares</a>
+                                <a href="fare.html">Routes</a>
                             </li>
 
                             <li><a href="#contact-us">Contact</a></li>
@@ -329,8 +329,157 @@
     </section>
     <!--/.booking-section-->
 
+
+    <section class="booking padding" id="book-now">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="54525a28-21b5-41fe-b4a4-cbd1e1ebf6fe">
+                        <input type="hidden" name="subject" value="Customer Booked a Taxi!!!">
+                        <input type="hidden" name="redirect" value="https://codecraftershub.github.io/taxi-wale/book-taxi.html?form">
+
+                        <div class="taxi-booking-form">
+                            <div class="form-field">
+                                <i class="las la-map-marker"></i>
+                                <input list="pickup-options" id="start-dest" name="start-dest" class="form-control" placeholder="Pickup City" required>
+                                <datalist id="pickup-options">
+                                    <!-- Pick-up city options -->
+                                    <option value="Ahmedabad">
+                                    <option value="Vadodara">
+                                    <option value="Bhuj">
+                                    <option value="Gandhidham">
+                                    <option value="Modasa">
+                                    <option value="Mumbai">
+                                    <option value="Rajkot">
+                                    <option value="Surat">
+                                    <option value="Udaipur">
+                                    <option value="Agra">
+                                    <option value="Ajmer">
+                                    <option value="Ambaji">
+                                    <option value="Amreli">
+                                    <option value="Anand">
+                                    <option value="Bharuch">
+                                    <option value="Bhavnagar">
+                                    <option value="Bhilwara">
+                                    <option value="Dahej">
+                                    <option value="Dakor">
+                                    <option value="Deesa">
+                                    <option value="Delhi">
+                                    <option value="Diu">
+                                    <option value="Dwarka">
+                                    <option value="Gandhinagar">
+                                    <option value="Godhra">
+                                    <option value="Halol">
+                                    <option value="Himmatnagar">
+                                    <option value="Jaipur">
+                                    <option value="Jamnagar">
+                                    <option value="Junagadh">
+                                    <option value="Kadi">
+                                    <option value="Lucknow">
+                                    <option value="Mehsana">
+                                    <option value="Morbi">
+                                    <option value="Mundra">
+                                    <option value="Nadiad">
+                                    <option value="Nathdwara">
+                                    <option value="Navsari">
+                                    <option value="Palanpur">
+                                    <option value="Palitana">
+                                    <option value="Porbandar">
+                                    <option value="Pune">
+                                    <option value="Vapi">
+                                </datalist>
+                            </div>
+                            <div class="form-field">
+                                <i class="las la-map-marker"></i>
+                                <input list="drop-options" id="end-dest" name="end-dest" class="form-control" placeholder="Drop City" required>
+                                <datalist id="drop-options">
+                                    <!-- Drop-off city options -->
+                                    <option value="Ankleshwar">
+                                    <option value="Abu Road">
+                                    <option value="Ahmedabad">
+                                    <option value="Vadodara">
+                                    <option value="Bhuj">
+                                    <option value="Gandhidham">
+                                    <option value="Modasa">
+                                    <option value="Mumbai">
+                                    <option value="Rajkot">
+                                    <option value="Surat">
+                                    <option value="Udaipur">
+                                    <option value="Agra">
+                                    <option value="Ajmer">
+                                    <option value="Ambaji">
+                                    <option value="Amreli">
+                                    <option value="Anand">
+                                    <option value="Bharuch">
+                                    <option value="Bhavnagar">
+                                    <option value="Bhilwara">
+                                    <option value="Dahej">
+                                    <option value="Dakor">
+                                    <option value="Deesa">
+                                    <option value="Delhi">
+                                    <option value="Diu">
+                                    <option value="Dwarka">
+                                    <option value="Gandhinagar">
+                                    <option value="Godhra">
+                                    <option value="Halol">
+                                    <option value="Himmatnagar">
+                                    <option value="Jaipur">
+                                    <option value="Jamnagar">
+                                    <option value="Junagadh">
+                                    <option value="Kadi">
+                                    <option value="Lucknow">
+                                    <option value="Mehsana">
+                                    <option value="Morbi">
+                                    <option value="Mundra">
+                                    <option value="Nadiad">
+                                    <option value="Nathdwara">
+                                    <option value="Navsari">
+                                    <option value="Palanpur">
+                                    <option value="Palitana">
+                                    <option value="Porbandar">
+                                    <option value="Pune">
+                                    <option value="Vapi">
+                                </datalist>
+                            </div>
+
+                            <div class="form-field">
+                                <i class="las la-tags"></i>
+                                <select name="package-type" id="package-type" name="TypeOfCab" class="niceSelect">
+                                    <option selected>Type of Cab</option>
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="SUV">SUV</option>
+                                    <option value="VIP">VIP</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                            </div>
+
+                            <div class="form-field">
+                                <i class="las la-calendar"></i>
+                                <input type="text" id="ride-date" name="ride-date" class="form-control date-picker" placeholder="Select Date" required>
+                            </div>
+
+                            <div class="form-field">
+                                <i class="las la-phone-volume"></i>
+                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            
+                            <div class="form-field">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            </div>
+                            <div class="form-field">
+                                <button id="submit" class="default-btn" type="submit">Book Your Taxi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-    <section class="about-section padding" id="about-us">
+    <section class="book-section padding" id="about-us">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-sm-6">
@@ -548,6 +697,9 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="limousine-taxi" data-bs-toggle="tab" data-bs-target="#limousine-taxi-content" type="button" role="tab" aria-controls="limousine-taxi-content" aria-selected="false">Other Taxi</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="vip-taxi" data-bs-toggle="tab" data-bs-target="#vip-taxi-content" type="button" role="tab" aria-controls="vip-taxi-content" aria-selected="false">VIP Taxi</button>
+                </li>
             </ul>
             <!--Tab Menu-->
             <div class="tab-content" id="pricing-tab-content">
@@ -725,6 +877,65 @@
                         </div>
                     </div>
                 </div>
+                <div class="tab-pane fade" id="vip-taxi-content" role="tabpanel" aria-labelledby="vip-taxi">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 sm-padding">
+                            <div class="pricing-item">
+                                <div class="pricing-head-wrap">
+                                    <div class="pricing-car">
+                                        <img src="assets/img/BMW-car.png" alt="car">
+                                        <div class="price">Starting From Rs. 5000</div>
+                                    </div>
+                                </div>
+                                <div class="pricing-head">
+                                    <h3>BMW
+                                </div>
+                                <ul class="pricing-list">
+                                    <li>Starting From: <span>Rs. 5000</span></li>
+                                    <li>Passengers: <span>4 Person</span></li>
+                                    <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 sm-padding">
+                            <div class="pricing-item">
+                                <div class="pricing-head-wrap">
+                                    <div class="pricing-car">
+                                        <img src="assets/img/Mercedes-car.png" alt="car">
+                                        <div class="price">Starting From Rs. 5000</div>
+                                    </div>
+                                </div>
+                                <div class="pricing-head">
+                                    <h3>Mercedes
+                                </div>
+                                <ul class="pricing-list">
+                                    <li>Starting From: <span>Rs. 5000</span></li>
+                                    <li>Passengers: <span>4 Person</span></li>
+                                    <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 sm-padding">
+                            <div class="pricing-item">
+                                <div class="pricing-head-wrap">
+                                    <div class="pricing-car">
+                                        <img src="assets/img/Audi-car.png" alt="car">
+                                        <div class="price">Starting From Rs. 5000</div>
+                                    </div>
+                                </div>
+                                <div class="pricing-head">
+                                    <h3>Audi
+                                </div>
+                                <ul class="pricing-list">
+                                    <li>Starting From: <span>Rs. 5000</span></li>
+                                    <li>Passengers: <span>4 Person</span></li>
+                                    <li><a href="book-taxi.html" class="default-btn">Book Taxi Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div><!-- Tab Content -->
         </div>
     </section>
@@ -749,21 +960,25 @@
                         <div class="swiper-slide">
                             <div class="service-item wow fade-in-bottom" data-wow-delay="200ms">
                                 <div class="service-thumb">
-                                    <img src="assets/location/abu.jpg" alt="img">
+                                    <img src="assets/location/Ahmd-to-surat.jpg" alt="img">
                                     <a class="post-category">Tour</a>
                                 </div>
                                 <div class="post-content-wrap">
                                     <div class="post-content location">
                                         <h3>
-                                            Ahemdabad To Abu
+                                            Ahemdabad To Surat
                                         </h3>
                                         <div class="cars-details">
                                             <p>SUV</p>
-                                            <p>Rs. 3500</p>
+                                            <p>Rs. 4499</p>
                                         </div>
                                         <div class="cars-details">
                                             <p>Sedan</p>
-                                            <p>Rs. 4500</p>
+                                            <p>Rs. 3499</p>
+                                        </div>
+                                        <div class="cars-details">
+                                            <p>Hatchback</p>
+                                            <p>Rs. 3399</p>
                                         </div>
                                         <a href="#contact-us" class="read-more">Contact</a>
                                     </div>
@@ -783,11 +998,43 @@
                                         </h3>
                                         <div class="cars-details">
                                             <p>SUV</p>
-                                            <p>Rs. 12000</p>
+                                            <p>Rs. 8499</p>
                                         </div>
                                         <div class="cars-details">
                                             <p>Sedan</p>
-                                            <p>Rs. 7500</p>
+                                            <p>Rs. 6999</p>
+                                        </div>
+                                        <div class="cars-details">
+                                            <p>Hatchback</p>
+                                            <p>Rs. 6899</p>
+                                        </div>
+                                        <a href="#contact-us" class="read-more">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-item wow fade-in-bottom" data-wow-delay="200ms">
+                                <div class="service-thumb">
+                                    <img src="assets/location/Ahmd-to-surat.jpg" alt="img">
+                                    <a class="post-category">Tour</a>
+                                </div>
+                                <div class="post-content-wrap">
+                                    <div class="post-content location">
+                                        <h3>
+                                            Mumbai To Surat
+                                        </h3>
+                                        <div class="cars-details">
+                                            <p>SUV</p>
+                                            <p>Rs. 4499</p>
+                                        </div>
+                                        <div class="cars-details">
+                                            <p>Sedan</p>
+                                            <p>Rs. 3499</p>
+                                        </div>
+                                        <div class="cars-details">
+                                            <p>Hatchback</p>
+                                            <p>Rs. 3399</p>
                                         </div>
                                         <a href="#contact-us" class="read-more">Contact</a>
                                     </div>
@@ -893,21 +1140,21 @@
                         <div class="swiper-slide">
                             <div class="service-item wow fade-in-bottom" data-wow-delay="200ms">
                                 <div class="service-thumb">
-                                    <img src="assets/location/Ahmd-to-surat.jpg" alt="img">
+                                    <img src="assets/location/Ahmd-to-abu.jpg" alt="img">
                                     <a class="post-category">Tour</a>
                                 </div>
                                 <div class="post-content-wrap">
                                     <div class="post-content location">
                                         <h3>
-                                            Ahemdabad To Surat
+                                            Ahemdabad To Abu
                                         </h3>
                                         <div class="cars-details">
                                             <p>SUV</p>
-                                            <p>Rs. 4800</p>
+                                            <p>Rs. 3500</p>
                                         </div>
                                         <div class="cars-details">
                                             <p>Sedan</p>
-                                            <p>Rs. 3800</p>
+                                            <p>Rs. 4500</p>
                                         </div>
                                         <a href="#contact-us" class="read-more">Contact</a>
                                     </div>
@@ -1191,7 +1438,7 @@
                     <div class="contact-form" id="contactForm">
                         <form action="https://api.web3forms.com/submit" method="post" id="ajax_contact" class="form-horizontal">
 
-                            <input type="hidden" name="access_key" value="a9a51003-f191-4edc-84fb-56feb605f7bf">
+                            <input type="hidden" name="access_key" value="54525a28-21b5-41fe-b4a4-cbd1e1ebf6fe">
                             <input type="hidden" name="subject" value="New Contact Form Submitted">
                             <input type="hidden" name="redirect" value="https://codecraftershub.github.io/taxi-wale/index.html?form">
                             
